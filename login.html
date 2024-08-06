@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="imgs/FAVICON.png" type="image/x-icon">
+  <script src="js/transition.js"></script>
+</head>
+<body>
+
+    <section>
+      
+      <div id="landscape"></div>
+      
+      <div  class="forms " >
+        <h1>Restic36</h1>
+        <h2>Trilha 2 - Fullstack</h2>
+        <div id="double-button">
+          <button id="btn-open" onclick="transitionForm()" class="btn-active ">Login</button>
+          <button id="btn-register" onclick="transitionForm()" class="">Cadastro</button>
+        </div>
+            <form action="" id="form-login" class="">
+              <input type="email" placeholder="exemplo@gmail.com" required >
+              <input type="password" placeholder="Senha" required>
+              <button id="single-btn" type="submit">Entrar</button>
+            </form>
+
+            <form action="" id="form-register" class="hidden">
+              <input type="text" placeholder="nome" required>
+              <input type="email" placeholder="exemplo@gmail.com" required>
+              <input type="password" placeholder="Senha" required>
+              <input type="password" placeholder="Confirme a senha" required>
+              <button id="single-btn" type="submit" required>Enviar</button>
+            </form>
+      </div>
+    </section>
+
+</body>
+</html>

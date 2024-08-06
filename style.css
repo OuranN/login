@@ -1,0 +1,144 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #3B5DF5;
+  background-image: url(imgs/background.jpg);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center ;
+  height: 100vh;
+}
+
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#fffdfd;
+  width: 45em;
+  height: 32em;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.355);
+  transition: 0.3s;
+}
+
+#landscape{
+  background-image: url('https://64.media.tumblr.com/7b91dc6ab574716d90701330a5a15bf7/tumblr_n70y28KAbQ1qglxwvo1_500.gifv');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:22.5em;
+  height: 32em;
+  transition: background-image 0.3s ease-in-out;
+}
+
+.forms{
+  width: 22.5em;
+  height: 32em;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  opacity: 1;
+  transition: 0.3s ease;
+  overflow: hidden;
+}
+
+.forms>h1{
+  color: #3B5DF5;
+  margin-bottom: 1em;
+}
+
+input{
+  background-color: rgba(195, 192, 192, 0.502);
+  border-radius: 1em;
+  width: 20em;
+  height: 2.5em;
+  border: none;
+  padding: 1em;
+  margin-bottom: 2em;
+  outline: none; /*remover contorno ao clicar no input*/
+}
+
+input:focus{
+  background-color: #05870b84;
+}
+
+#single-btn{
+  background-color: #3B5DF5;
+  border: none;
+  border-radius: 1em;
+  color: white;
+  width: 7em;
+  height: 2.5em;
+}
+
+#single-btn:hover{
+  cursor: pointer;
+  background-color: #05870c;
+}
+
+#double-button{
+  background-color: #3B5DF5;
+  border: none;
+  border-radius: 1em;
+  margin: 1em;
+}
+
+button{
+  background-color: #ffffff00;
+  border: none;
+  border-radius: 1em;
+  color: white;
+  width: 7em;
+  height: 2.0em;
+  transition:  0.3s;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hidden { 
+  display: none;
+  overflow: hidden;
+}
+
+.btn-active{
+  background-color: #05870c;
+  transition:  0.3s;
+}
+
+.btn-double{
+  background-color: #ffffff00;
+}
+
+#login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width:775px) {
+  #landscape{
+    display: none;
+  }
+  section{
+    width: 20em;
+    transition: 0.3s;
+  }
+}
